@@ -2,8 +2,8 @@ import pickle
 from flask import Flask, request, jsonify, render_template
 import pandas as pd
 import numpy as np
-app=Flask(__name__)
-
+application=Flask(__name__)
+app=application
 log_model=pickle.load(open('models/model.pkl', 'rb'))
 
 
